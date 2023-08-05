@@ -1,0 +1,146 @@
+$iran-sans:'IRANSansWeb';
+$iran-sans_Bold:'iransansBold';
+$AILERONS-TYPEFACE: 'AILERONS-TYPEFACE';
+$lalezar: 'lalezar';
+
+@import './config.scss';  
+@font-face {
+    font-family: $lalezar;
+    src: url('../fonts/Lalezar.eot'),
+    url('../fonts/Lalezar.woff') format('woff'),
+    url('../fonts/Lalezar.ttf') format('truetype');
+  }
+  html,body{
+      width: 100%;
+      height: 100%;
+  }
+  *{
+      font-family: $lalezar;
+  }
+.showcase__title,
+.showcase__description {
+  text-align: center;
+}
+
+.svg-container {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.svg-container__inner{
+  position: relative;
+  width: 100%;
+  padding-bottom: 228.5714%;
+}
+
+.svg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+.text-pink{
+  color:pink;
+}
+.text-blue{
+  color:rgb(32, 145, 221)
+}
+
+
+svg{
+	stroke-width: .3;
+	fill: none;
+	width: 200px;
+	height: 200px;
+	stroke-linecap: round;
+  stroke-linejoin: round;
+  visibility: visible;
+  position: absolute;
+transform-origin: bottom;
+left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -60px;
+}
+
+.main-svg{
+
+  g{
+    animation-duration:30s;
+  }
+}
+
+.second-svg{
+	visibility: hidden;
+	
+}
+
+.third-svg{
+	z-index: -1;
+	visibility: hidden;
+	
+}
+
+.rotate{
+	transform: rotate(20deg);
+}
+
+.rotate-2{
+	transform: rotate(30deg);
+}
+
+.needle{
+	width: 150px;
+	height: 8px;
+	background: grey;
+	position: absolute;
+	left: 80vw;
+	top: 35vh;
+	border-radius: 0 10px 10px 0;
+}
+
+.needle:before{
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 4px 20px 4px 0px;
+	border-color: transparent grey transparent transparent;
+	border-style: solid;
+	position: absolute;
+	left: -20px;
+}
+
+.needle:after{
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 3px;
+	background: #f9f0ae;
+	border-radius: 40%;
+	position: absolute;
+	left: 135px;
+	top: 2.5px;
+}
+
+
+.slow-motion{
+	top: 55vh;
+}
+.content{
+  background-image: url(../images/boyOrgirl.png);
+  background-size: 500px 500px;
+  background-position: center;
+  background-repeat:no-repeat;
+  width: 100%;
+    height: 500px;
+
+}
+#boyList{
+	right: 5px;
+}
+#girlList{
+	left:5px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="./assets/js/jQuery.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <title>کارت دعوت</title>
+    <meta property="og:title" content="کارت دعوت" />
+<meta property="og:url" content="http://nini.ezyro.com" />
+<meta property="og:description" content="شما به جشن تعیین جنسیت من دعوت شدی">
+<meta property="og:image" itemprop="image" content="http://nini.ezyro.com/assets/images/social.jpg"/>
+<meta property="og:type" content="article" />
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="400" />
+<meta property="og:locale" content="fa_IR" />
+</head>
+<body >
+    <link itemprop="thumbnailUrl" href="http://nini.ezyro.com/assets/images/social.jpg"/> 
+<span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject" class="d-none"> 
+  <link itemprop="url" href="http://nini.ezyro.com/assets/images/social.jpg"/> 
+</span>
+    <div class="flip-card min-vh-100 min-vw-100">
+        <div id="help" class="position-fixed d-flex align-items-center justify-content-center animated zoomOut">
+                
+            <img src="./assets/images/help.png" width="320" />
+        </div> 
+        <div class="flip-card-inner min-vh-100 min-vw-100">
+            <div class="flip-card-back  min-vh-100 min-vw-100">
+                <div class="position-relative min-vh-100 min-vw-100 " id="back">
+
+                    <div class="position-absolute" id="door">
+                        <div class="position-relative">
+                            
+                            <img src="assets/images/envelope_front_close_door.png" width="320" style="top:-51px" class="door_closed position-absolute"/>
+                        </div>
+                    </div>
+                    <div id="efod" class="position-absolute ef">
+                
+                        <img src="./assets/images/envelope_front_open_down.png" width="320" />
+                    </div>
+                    <div id="latter" class="position-absolute ef d-flex justify-content-center align-items-center">
+                        <div class="position-relative">
+                            <img class="position-absolute" src="./assets/images/boyOrgirl.png" width="220"/>
+                            <button class="genderButten girl btn btn-outline-dark animated heartBeat infinite">دختر</button>
+                            <button class="genderButten boy btn btn-outline-dark animated heartBeat infinite">پسر</button>
+                        </div>
+                    </div>
+                    
+                    <div id="efo" class="position-absolute ef">
+                
+                        <img src="./assets/images/envelope_front_close.png" width="320" />
+                    </div>
+                    <div id="bubbleTop" class="position-absolute bubble" >
+                        <div class="position-relative">
+
+                            <span class="position-absolute" >اگه حدس میزنی من دخترم اینجا رو کلیک کن</span>
+                            <img  class="position-absolute" src="./assets/images/bubbleLeftDown.png" width="220" />
+                        </div>
+                    </div>
+                    <div id="bubbleBottom" class="position-absolute bubble" >
+                        <div class="position-relative">
+
+                            <span class="position-absolute">اگه حدس میزنی من پسرم اینجا رو کلیک کن</span>
+                    
+                            <img class="position-absolute" src="./assets/images/bubbleRightDown.png" width="220" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" flip-card-front  min-vh-100 min-vw-100">
+
+                <div class="position-relative min-vh-100 min-vw-100" id="front">
+                    <div class="position-absolute stamp" id="tambr" >
+                       <img src="assets/images/tambr.png" width="90"/>
+                   </div>
+                    <div class="position-absolute stamp" id="stamp" >
+                        <img src="assets/images/stamp.png" width="90"/>
+                    </div>
+                    <div id="eb" class="position-absolute ef">
+                
+                        <img src="./assets/images/envelope_back_close.png" width="320" />
+                    </div> 
+                    
+                    <p id="address" class="position-absolute"></p>
+                    <p id="saat" class="position-absolute"></p>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-outline-success rounded-circle position-fixed p-0 animated tada infinite" id="helpBtn">?</button>
+    </div>
+</body>
+</html>
